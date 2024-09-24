@@ -18,16 +18,15 @@ g('get-started').addEventListener('click', e => {
 /* accept payment */
 
 g('buy').addEventListener('click', e => {
-  window.location.href = 'https://buy.stripe.com/test_fZeeVS4jF2Tl1pe4gg'
+  window.location.href = 'https://buy.stripe.com/00g165fxMgkC7Ju5km'
 })
 
 g('subscribe').addEventListener('click', e => {
-  window.location.href = 'https://buy.stripe.com/test_7sIcNK7vR8dFaZOfYZ'
+  window.location.href = 'https://buy.stripe.com/eVacONbhwgkC2paeUX'
 })
 
 /* tracking */
-
-/* ;((c, l, a, r, i, t, y) => {
+;((c, l, a, r, i, t, y) => {
   c[a] =
     c[a] ||
     function () {
@@ -38,13 +37,13 @@ g('subscribe').addEventListener('click', e => {
   t.src = 'https://www.clarity.ms/tag/' + i
   y = l.getElementsByTagName(r)[0]
   y.parentNode.insertBefore(t, y)
-})(window, document, 'clarity', 'script', 'xxxxxxx') */
+})(window, document, 'clarity', 'script', 'o8cjnil62g')
 
 document.addEventListener('DOMContentLoaded', e => {
   fetch('samples.json')
     .then(response => response.json())
     .then(videos => {
-      videos.forEach((video, i) => {
+      videos.slice(0, 2).forEach((video, i) => {
         const button = document.createElement('button')
         if (!i) button.classList.add('selected')
         button.textContent = video.tag

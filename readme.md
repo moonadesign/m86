@@ -8,6 +8,6 @@ Hype videos for new ideas.
 - [x] hero
 - [x] samples
 - [x] payment buttons
-- [ ] analytics
-- [ ] color
-- [ ] meta
+- [x] analytics
+- [x] color
+- [x] meta
